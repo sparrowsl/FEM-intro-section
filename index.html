@@ -3,30 +3,115 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>FEM-Intro-Section</title>
+		<link rel="stylesheet" href="./css/bundle.css" />
+		<script src="js/main.js" defer></script>
 	</head>
-	<body>
-		Features Company Careers About Login Register Make remote work Get your team in sync, no matter
-		your location. Streamline processes, create team rituals, and watch productivity soar. Learn
-		more
+	<body class="bg-almost_white">
+		<div>
+			<header class="container mx-auto flex h-[10vh] items-center gap-10 font-epilogue">
+				<div class="text-3xl font-bold text-almost_black">snap</div>
+				<nav class="flex w-full">
+					<ul class="mr-auto flex gap-5 text-medium_gray">
+						<li class="relative">
+							<a href="#" class="flex items-center justify-center gap-1 hover:text-almost_black">
+								<span class="extraNav"> Features </span>
+								<img src="./static/images/icon-arrow-down.svg" alt="" class="h-fit" />
+							</a>
+							<!-- items to display on hover -->
+							<ul
+								class="absolute top-full right-0 mx-auto mt-1 hidden w-36 flex-col gap-4 rounded-md bg-white p-4 shadow-md"
+							>
+								<li>
+									<a href="#" class="flex items-center gap-2 text-sm hover:font-semibold"
+										><img src="./static/images/icon-todo.svg" alt="" /> <span>Todo List</span></a
+									>
+								</li>
+								<li>
+									<a href="#" class="flex items-center gap-2 text-sm hover:font-semibold"
+										><img src="./static/images/icon-calendar.svg" alt="" /> <span>Calendar</span></a
+									>
+								</li>
+								<li>
+									<a href="#" class="flex items-center gap-2 text-sm hover:font-semibold"
+										><img src="./static/images/icon-reminders.svg" alt="" />
+										<span>Reminders</span></a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="relative">
+							<a href="#" class="flex items-center justify-center gap-1 hover:text-almost_black">
+								<span class="extraNav"> Company </span>
+								<img src="./static/images/icon-arrow-down.svg" alt="" class="h-fit" />
+							</a>
+							<!-- items to display on hover -->
+							<ul
+								class="absolute top-full left-0 mt-1 hidden w-28 flex-col gap-2 rounded-md bg-white p-4 shadow-md"
+							>
+								<li><a href="#" class="text-sm hover:font-semibold">History</a></li>
+								<li><a href="#" class="text-sm hover:font-semibold">Our Team</a></li>
+								<li><a href="#" class="text-sm hover:font-semibold">Blog</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="hover:text-almost_black">Careers</a></li>
+						<li><a href="#" class="hover:text-almost_black">About</a></li>
+					</ul>
 
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-			Coded by <a href="#">Your Name Here</a>.
+					<!-- login and register -->
+					<ul class="flex gap-5 text-medium_gray">
+						<li><a href="#" class="hover:text-almost_black">Login</a></li>
+						<li>
+							<a
+								href="#"
+								class="rounded-xl border-[1px] border-medium_gray px-4 py-2 hover:border-almost_black hover:text-almost_black"
+							>
+								Register
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 		</div>
+
+		<main class="">
+			<div class="grid h-[90vh] grid-cols-2 items-center px-20 font-epilogue">
+				<div class="flex max-w-[60ch] flex-col gap-6">
+					<h1 class="max-w-lg text-7xl font-bold text-almost_black">Make remote work</h1>
+					<!-- intro text -->
+					<p class="text-lg text-medium_gray">
+						Get your team in sync, no matter your location. Streamline processes, create team
+						rituals, and watch productivity soar.
+					</p>
+					<!-- learn more -->
+					<a
+						href="#"
+						class="block w-fit rounded-xl border-[1px] border-almost_black bg-almost_black px-6 py-3 font-semibold text-almost_white transition-colors hover:bg-transparent hover:text-almost_black"
+					>
+						Learn more
+					</a>
+
+					<!-- Clients logo -->
+					<div class="mt-5 flex gap-5">
+						<img src="./static/images/client-databiz.svg" alt="" class="h-fit w-20" />
+						<img src="./static/images/client-audiophile.svg" alt="" class="h-fit w-20" />
+						<img src="./static/images/client-meet.svg" alt="" class="h-fit w-20" />
+						<img src="./static/images/client-maker.svg" alt="" class="h-fit w-20" />
+					</div>
+				</div>
+
+				<!-- Hero Image -->
+				<div class="mx-auto max-w-sm">
+					<img src="./static/images/image-hero-desktop.png" alt="hero pic" class="" />
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
