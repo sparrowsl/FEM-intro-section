@@ -1,6 +1,11 @@
 'use strict';
 
+const menuToggle = document.getElementById('toggle');
 const extraNavs = document.querySelectorAll('span.extraNav');
+
+menuToggle.addEventListener('click', () => {
+	console.log('toggle clicked...');
+});
 
 extraNavs.forEach((nav) => {
 	nav.addEventListener('click', () => {

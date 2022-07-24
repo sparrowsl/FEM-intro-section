@@ -16,9 +16,11 @@
 	</head>
 	<body class="bg-almost_white">
 		<div>
-			<header class="container mx-auto flex h-[10vh] items-center gap-10 font-epilogue">
+			<header
+				class="container mx-auto flex h-[10vh] items-center justify-between gap-10 px-3 font-epilogue"
+			>
 				<div class="text-3xl font-bold text-almost_black">snap</div>
-				<nav class="flex w-full">
+				<nav class="hidden md:flex md:w-full">
 					<ul class="mr-auto flex gap-5 text-medium_gray">
 						<li class="relative">
 							<a href="#" class="flex items-center justify-center gap-1 hover:text-almost_black">
@@ -78,15 +80,26 @@
 						</li>
 					</ul>
 				</nav>
+
+				<!-- hamburger -->
+				<div id="toggle">
+					<img src="./static/images/icon-menu.svg" alt="" />
+				</div>
 			</header>
 		</div>
 
 		<main class="">
-			<div class="grid h-[90vh] grid-cols-2 items-center px-20 font-epilogue">
-				<div class="flex max-w-[60ch] flex-col gap-6">
-					<h1 class="max-w-lg text-7xl font-bold text-almost_black">Make remote work</h1>
+			<div class="grid h-[90vh] items-center font-epilogue md:grid-cols-2 md:px-20">
+				<div
+					class="order-4 flex max-w-[60ch] flex-col items-center gap-6 px-3 md:order-2 md:items-start"
+				>
+					<h1
+						class="max-w-lg text-center text-2xl font-bold text-almost_black md:text-left md:text-7xl"
+					>
+						Make remote work
+					</h1>
 					<!-- intro text -->
-					<p class="text-lg text-medium_gray">
+					<p class="text-center text-lg text-medium_gray">
 						Get your team in sync, no matter your location. Streamline processes, create team
 						rituals, and watch productivity soar.
 					</p>
@@ -99,16 +112,16 @@
 					</a>
 
 					<!-- Clients logo -->
-					<div class="mt-5 flex gap-5">
-						<img src="./static/images/client-databiz.svg" alt="" class="h-fit w-20" />
-						<img src="./static/images/client-audiophile.svg" alt="" class="h-fit w-20" />
-						<img src="./static/images/client-meet.svg" alt="" class="h-fit w-20" />
-						<img src="./static/images/client-maker.svg" alt="" class="h-fit w-20" />
+					<div class="mt-5 flex justify-between gap-5 md:justify-start">
+						<img src="./static/images/client-databiz.svg" alt="" class="h-fit w-16 md:w-20" />
+						<img src="./static/images/client-audiophile.svg" alt="" class="h-fit w-16 md:w-20" />
+						<img src="./static/images/client-meet.svg" alt="" class="h-fit w-16 md:w-20" />
+						<img src="./static/images/client-maker.svg" alt="" class="h-fit w-16 md:w-20" />
 					</div>
 				</div>
 
 				<!-- Hero Image -->
-				<div class="mx-auto max-w-sm">
+				<div class="order-2 mx-auto mb-10 max-w-sm md:order-4 md:mb-0">
 					<img src="./static/images/image-hero-desktop.png" alt="hero pic" class="" />
 				</div>
 			</div>
